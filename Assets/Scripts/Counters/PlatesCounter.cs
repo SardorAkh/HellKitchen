@@ -14,7 +14,9 @@ public class PlatesCounter : BaseCounter {
     private float spawnPlateTimerMax = 4f;
     private int platesSpawnedAmount;
     private int platesSpawnedAmountMax = 4;
-
+    private void Start() {
+        spawnPlateTimer = spawnPlateTimerMax;
+    }
     private void Update() {
         spawnPlateTimer += Time.deltaTime;
         if (spawnPlateTimer > spawnPlateTimerMax) {
