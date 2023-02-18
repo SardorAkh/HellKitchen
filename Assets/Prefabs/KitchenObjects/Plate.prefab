@@ -484,6 +484,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plate_Visual
       objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226177, guid: c0c9afd619b40914a8f625c0535e2284,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -606,7 +611,7 @@ MonoBehaviour:
     gameObject: {fileID: 8496884315019608873}
   - kitchenObjectSO: {fileID: 11400000, guid: 2a1b79fb1b43c4a49a8944ecebc6b69c, type: 2}
     gameObject: {fileID: 8496884314795132157}
-  - kitchenObjectSO: {fileID: 11400000, guid: 2a1b79fb1b43c4a49a8944ecebc6b69c, type: 2}
+  - kitchenObjectSO: {fileID: 11400000, guid: 9bd8eadeb7be36448aca88d6b7809cbc, type: 2}
     gameObject: {fileID: 8496884315743432371}
   - kitchenObjectSO: {fileID: 11400000, guid: 38c4e4f49ffe82044aa9d150d75ddc24, type: 2}
     gameObject: {fileID: 8552769891262334627}

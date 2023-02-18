@@ -22,6 +22,7 @@ public class GameInput : MonoBehaviour {
     public event EventHandler OnInteract;
     public event EventHandler OnInteractAlternate;
     public event EventHandler OnPauseAction;
+    public event EventHandler OnRebindBinding;
 
     private PlayerInputActions playerInputActions;
 
@@ -37,12 +38,6 @@ public class GameInput : MonoBehaviour {
         playerInputActions.Player.Interact.performed += Interact_performed;
         playerInputActions.Player.InteractAlternate.performed += InteractAlternate_performed;
         playerInputActions.Player.Pause.performed += Pause_performed;
-    }
-    private Action ClosureDemo(int f) {
-        void d() {
-            f++;
-        }
-        return d;
     }
     private void OnDestroy() {
 
@@ -135,6 +130,8 @@ public class GameInput : MonoBehaviour {
                 onActionRebound();
                 PlayerPrefs.SetString(PLAYER_PREFS_BINDINGS, playerInputActions.SaveBindingOverridesAsJson());
                 PlayerPrefs.Save();
+
+                OnRebindBinding?.Invoke(this, EventArgs.Empty);
             })
         .Start();
     }
