@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BaseCounter">
+    <Position X="20" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAAABAAAAAEAACAAAISCAAAAAQAAAAQAAACA=</HashCode>
+      <FileName>Assets\Scripts\Counters\BaseCounter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClearCounter">
+    <Position X="11.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Counters\ClearCounter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContainerCounter">
+    <Position X="13.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAEAAAABEAAA=</HashCode>
+      <FileName>Assets\Scripts\Counters\ContainerCounter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CuttingCounter">
+    <Position X="16.25" Y="7.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACAAAAAASAAABAAAAIgApAAAAQAAABQCAQAA=</HashCode>
+      <FileName>Assets\Scripts\Counters\CuttingCounter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DeliveryCounter">
+    <Position X="20.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Counters\DeliveryCounter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlatesCounter">
+    <Position X="22.5" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACBgAAAAAAAAEAAAMAAAAQARAAAAAIBEAAA=</HashCode>
+      <FileName>Assets\Scripts\Counters\PlatesCounter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StoveCounter">
+    <Position X="25.5" Y="7.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="StoveCounter.OnStateChangedEventArgs">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Counters\StoveCounter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="StoveCounter.State">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Counters\StoveCounter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAADAkAAChQAAAAACAIIAAgAAgFCAACqAAFAAA=</HashCode>
+      <FileName>Assets\Scripts\Counters\StoveCounter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrashCounter">
+    <Position X="29.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQBEAAA=</HashCode>
+      <FileName>Assets\Scripts\Counters\TrashCounter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unity.Netcode.NetworkBehaviour" Collapsed="true">
+    <Position X="17" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KitchenObject">
+    <Position X="4" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAQBAAAECAAAACGEAAAAAEAAAABBAMA=</HashCode>
+      <FileName>Assets\Scripts\KitchenObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlateKitchenObject">
+    <Position X="4" Y="7.25" Width="2.25" />
+    <NestedTypes>
+      <Class Name="PlateKitchenObject.OnIngredientAddedd_EventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\PlateKitchenObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAACAAgAAAACAAAAAAAAAAAAAAAAAAAAQAEA=</HashCode>
+      <FileName>Assets\Scripts\PlateKitchenObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player">
+    <Position X="7.25" Y="2.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Player.OnSelectedCounterChangedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Player.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIYCIAEAEOCBAAAAAEAICAABACAAAAAACAEJQTABEKA=</HashCode>
+      <FileName>Assets\Scripts\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI Variable Text" Size="9.27" />
+</ClassDiagram>

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,7 +37,7 @@ public class OptionsUI : MonoBehaviour {
 
     private void Awake() {
         Instance = this;
-
+        
         soundEffectsButton.onClick.AddListener(() => {
             SoundManager.Instance.ChangeVolume();
             UpdateVisual();
@@ -57,7 +58,7 @@ public class OptionsUI : MonoBehaviour {
 
     }
     private void Start() {
-        GameManager.Instance.OnGameUnpaused += GameManager_OnGameUnpaused;
+        GameManager.Instance.OnLocalGameUnpaused += GameManager_OnGameUnpaused;
 
         UpdateVisual();
         Hide();

@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-public class BaseCounter : MonoBehaviour, IKitchenObjectParent {
+using Unity.Netcode;
+
+public class BaseCounter : NetworkBehaviour, IKitchenObjectParent {
 
     public static event EventHandler OnAnyObjectPlacedHere;
 
@@ -13,7 +15,7 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent {
     [SerializeField]
     private Transform counterTopPoint;
 
-    protected KitchenObject kitchenObject;
+    private KitchenObject kitchenObject;
     public virtual void Interact(Player player) {
 
     }
@@ -36,5 +38,8 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent {
     }
     public bool HasKitchenObject() {
         return kitchenObject != null;
+    }
+    public NetworkObject GetNetworkObject() {
+        return NetworkObject;
     }
 }
