@@ -96,7 +96,6 @@ public class KitchenGameMultiplayer : NetworkBehaviour {
             return;
         }
         connectionApprovalResponse.Approved = true;
-
     }
 
     public void StartClient() {
